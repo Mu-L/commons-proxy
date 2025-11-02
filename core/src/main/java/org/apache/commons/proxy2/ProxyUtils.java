@@ -82,7 +82,7 @@ public final class ProxyUtils
      * is maintained.
      * </p>
      * <p/>
-     * <b>Note</b>: Implementation of this method was "borrowed" from <a href="http://commons.apache.org/lang/">Apache
+     * <b>Note</b>: Implementation of this method was "borrowed" from <a href="https://commons.apache.org/lang/">Apache
      * Commons Lang</a> to avoid a dependency.
      * </p>
      * 

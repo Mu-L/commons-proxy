@@ -34,9 +34,10 @@ import org.apache.commons.proxy2.Invocation;
 import org.apache.commons.proxy2.ProxyUtils;
 
 /**
- * A <a href="http://www.jboss.org/products/javassist">Javassist</a>-based {@link Invocation} implementation. This class
- * actually serves as the superclass for all <a href="http://www.jboss.org/products/javassist">Javassist</a>-based
- * method invocations. Subclasses are dynamically created to deal with specific interface methods (they're hard-wired).
+ * A <a href="https://www.jboss.org/products/javassist">Javassist</a>-based {@link Invocation} implementation.
+ * This class actually serves as the superclass for all <a href="https://www.jboss.org/products/javassist">
+ * Javassist</a>-based method invocations. Subclasses are dynamically created to deal with specific interface
+ * methods (they're hard-wired).
  * 
  * @since 1.0
  */

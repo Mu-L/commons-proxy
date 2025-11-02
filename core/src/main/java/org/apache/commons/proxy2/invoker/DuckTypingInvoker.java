@@ -23,7 +23,7 @@ import org.apache.commons.proxy2.Invoker;
 import org.apache.commons.proxy2.ObjectProvider;
 
 /**
- * An invoker which supports <a href="http://en.wikipedia.org/wiki/Duck_typing">&quot;duck typing&quot;</a>, meaning
+ * An invoker which supports <a href="https://en.wikipedia.org/wiki/Duck_typing">&quot;duck typing&quot;</a>, meaning
  * that it finds a matching method on the object returned from the target provider and invokes it. This class is useful
  * for adapting an existing class to an interface it does not implement.
  * <p>
