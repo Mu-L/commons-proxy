@@ -33,7 +33,7 @@ under the License.
   </description>
 
   <scm>
-    <connection>scm:svn:http://svn.apache.org/repos/asf/commons/proper/proxy/trunk/dist</connection>
+    <connection>scm:svn:https://svn.apache.org/repos/asf/commons/proper/proxy/trunk/dist</connection>
     <developerConnection>scm:svn:https://svn.apache.org/repos/asf/commons/proper/proxy/trunk/dist</developerConnection>
     <url>http://svn.apache.org/viewvc/commons/proper/proxy/trunk/dist</url>
   </scm>
