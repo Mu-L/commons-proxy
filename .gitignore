@@ -9,3 +9,7 @@ target/
 .vscode/
 *.code-workspace
 .history/
+
+# NetBeans files
+nb-configuration.xml
+nbactions.xml
