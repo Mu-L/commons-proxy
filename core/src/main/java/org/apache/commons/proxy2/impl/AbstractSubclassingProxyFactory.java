@@ -95,7 +95,7 @@ public abstract class AbstractSubclassingProxyFactory extends AbstractProxyFacto
      * 
      * @param proxyClasses
      *            the proxy classes
-     * @return the <code>proxyClasses</code> transformed into an array of only the interface classes
+     * @return The <code>proxyClasses</code> transformed into an array of only the interface classes
      */
     protected static Class<?>[] toInterfaces(Class<?>[] proxyClasses)
     {

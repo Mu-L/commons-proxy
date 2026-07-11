@@ -62,7 +62,7 @@ public class InvocationRecorder
      * 
      * @param <T>
      * @param type
-     * @return the generated proxy
+     * @return The generated proxy
      */
     public <T> T proxy(Class<T> type)
     {
@@ -75,7 +75,7 @@ public class InvocationRecorder
      * @param <T>
      * @param genericType
      * @param type
-     * @return the generated proxy
+     * @return The generated proxy
      */
     public <T> T proxy(Type genericType, Class<T> type)
     {

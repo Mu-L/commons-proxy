@@ -96,7 +96,7 @@ final class JavassistUtils
      * 
      * @param superclass
      *            the superclass
-     * @return the new derived {@link CtClass}
+     * @return The new derived {@link CtClass}
      */
     public static CtClass createClass(Class<?> superclass)
     {
@@ -110,7 +110,7 @@ final class JavassistUtils
      *            the base name
      * @param superclass
      *            the superclass
-     * @return the new derived {@link CtClass}
+     * @return The new derived {@link CtClass}
      */
     public static synchronized CtClass createClass(String baseName, Class<?> superclass)
     {
@@ -122,7 +122,7 @@ final class JavassistUtils
      * 
      * @param clazz
      *            the Java {@link Class}
-     * @return the {@link CtClass}
+     * @return The {@link CtClass}
      */
     public static CtClass resolve(Class<?> clazz)
     {
@@ -151,7 +151,7 @@ final class JavassistUtils
      * 
      * @param classes
      *            the Java {@link Class}es
-     * @return the corresponding {@link CtClass}es
+     * @return The corresponding {@link CtClass}es
      */
     public static CtClass[] resolve(Class<?>[] classes)
     {

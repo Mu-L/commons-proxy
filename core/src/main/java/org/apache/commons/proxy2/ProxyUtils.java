@@ -108,7 +108,7 @@ public final class ProxyUtils
      * 
      * @param clazz
      *            the class
-     * @return the class' name as you would expect to see it in Java code
+     * @return The class' name as you would expect to see it in Java code
      */
     public static String getJavaClassName(Class<?> clazz)
     {
@@ -124,7 +124,7 @@ public final class ProxyUtils
      * 
      * @param primitiveType
      *            the primitive type
-     * @return the wrapper class
+     * @return The wrapper class
      */
     public static Class<?> getWrapperClass(Class<?> primitiveType)
     {
@@ -136,7 +136,7 @@ public final class ProxyUtils
      * 
      * @param type
      *            the type
-     * @return the null value
+     * @return The null value
      */
     public static <T> T nullValue(Class<T> type)
     {

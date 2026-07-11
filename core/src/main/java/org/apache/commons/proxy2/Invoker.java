@@ -41,7 +41,7 @@ public interface Invoker extends Serializable
      *            the method being invoked
      * @param arguments
      *            the arguments
-     * @return the return value
+     * @return The return value
      * @throws Throwable
      *             thrown by the implementation
      */

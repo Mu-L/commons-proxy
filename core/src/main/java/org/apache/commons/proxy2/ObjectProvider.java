@@ -35,7 +35,7 @@ public interface ObjectProvider<T> extends Serializable
      * {@link org.apache.commons.proxy2.exception.ObjectProviderException} if any problems arise while
      * constructing/finding the object.
      * 
-     * @return the object on which the method should be called
+     * @return The object on which the method should be called
      */
     T getObject();
 }
