@@ -160,7 +160,7 @@ public abstract class JavassistInvocation implements Invocation
      *            the classloader to use
      * @param interfaceMethod
      *            the interface method
-     * @return a method invocation class specifically coded to invoke the supplied interface method
+     * @return A method invocation class specifically coded to invoke the supplied interface method
      * @throws CannotCompileException
      *             if a compilation error occurs
      */

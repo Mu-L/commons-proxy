@@ -33,7 +33,7 @@ public final class InterceptorUtils
      * 
      * @param value
      *            the constant
-     * @return an {@link Interceptor} which always returns a constant value (for all methods)
+     * @return An {@link Interceptor} which always returns a constant value (for all methods)
      */
     public static Interceptor constant(Object value)
     {
@@ -45,7 +45,7 @@ public final class InterceptorUtils
      * 
      * @param provider
      *            the object provider
-     * @return an {@link Interceptor} which returns the resulting object from an object provider (for all methods)
+     * @return An {@link Interceptor} which returns the resulting object from an object provider (for all methods)
      */
     public static Interceptor provider(ObjectProvider<?> provider)
     {
@@ -57,7 +57,7 @@ public final class InterceptorUtils
      * 
      * @param e
      *            the exception
-     * @return an {@link Interceptor} which throws a specific exception (for all methods)
+     * @return An {@link Interceptor} which throws a specific exception (for all methods)
      */
     public static Interceptor throwing(Exception e)
     {
@@ -69,7 +69,7 @@ public final class InterceptorUtils
      * 
      * @param provider
      *            the object provider
-     * @return an {@link Interceptor} which throws the exception provided by an object provider (for all methods)
+     * @return An {@link Interceptor} which throws the exception provided by an object provider (for all methods)
      */
     public static Interceptor throwing(ObjectProvider<? extends Exception> provider)
     {

@@ -56,7 +56,7 @@ public abstract class AbstractProxyFactory implements ProxyFactory
      *            the delegate provider
      * @param proxyClasses
      *            the interfaces that the proxy should implement
-     * @return a proxy which delegates to the object provided by the target object provider
+     * @return A proxy which delegates to the object provided by the target object provider
      */
     @Override
     public <T> T createDelegatorProxy(ObjectProvider<?> delegateProvider, Class<?>... proxyClasses)
@@ -74,7 +74,7 @@ public abstract class AbstractProxyFactory implements ProxyFactory
      *            the method interceptor
      * @param proxyClasses
      *            the interfaces that the proxy should implement
-     * @return a proxy which passes through a {@link Interceptor interceptor} before eventually reaching the
+     * @return A proxy which passes through a {@link Interceptor interceptor} before eventually reaching the
      *         <code>target</code> object.
      */
     @Override
@@ -92,7 +92,7 @@ public abstract class AbstractProxyFactory implements ProxyFactory
      *            the invoker
      * @param proxyClasses
      *            the interfaces that the proxy should implement
-     * @return a proxy which uses the provided {@link Invoker} to handle all method invocations
+     * @return A proxy which uses the provided {@link Invoker} to handle all method invocations
      */
     @Override
     public <T> T createInvokerProxy(Invoker invoker, Class<?>... proxyClasses)

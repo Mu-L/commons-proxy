@@ -45,7 +45,7 @@ public interface ProxyFactory
      *            the delegate provider
      * @param proxyClasses
      *            the interfaces that the proxy should implement
-     * @return a proxy which delegates to the object provided by the target object provider
+     * @return A proxy which delegates to the object provided by the target object provider
      */
     <T> T createDelegatorProxy(ObjectProvider<?> delegateProvider, Class<?>... proxyClasses);
 
@@ -58,7 +58,7 @@ public interface ProxyFactory
      *            the delegate provider
      * @param proxyClasses
      *            the interfaces that the proxy should implement
-     * @return a proxy which delegates to the object provided by the target <code>delegateProvider>
+     * @return A proxy which delegates to the object provided by the target <code>delegateProvider>
      */
     <T> T createDelegatorProxy(ClassLoader classLoader, ObjectProvider<?> delegateProvider, Class<?>... proxyClasses);
 
@@ -72,7 +72,7 @@ public interface ProxyFactory
      *            the method interceptor
      * @param proxyClasses
      *            the interfaces that the proxy should implement
-     * @return a proxy which passes through a {@link Interceptor interceptor} before eventually reaching the
+     * @return A proxy which passes through a {@link Interceptor interceptor} before eventually reaching the
      *         <code>target</code> object.
      */
     <T> T createInterceptorProxy(Object target, Interceptor interceptor, Class<?>... proxyClasses);
@@ -89,7 +89,7 @@ public interface ProxyFactory
      *            the method interceptor
      * @param proxyClasses
      *            the interfaces that the proxy should implement.
-     * @return a proxy which passes through a {@link Interceptor interceptor} before eventually reaching the
+     * @return A proxy which passes through a {@link Interceptor interceptor} before eventually reaching the
      *         <code>target</code> object.
      */
     <T> T createInterceptorProxy(ClassLoader classLoader, Object target, Interceptor interceptor,
@@ -103,7 +103,7 @@ public interface ProxyFactory
      *            the invoker
      * @param proxyClasses
      *            the interfaces that the proxy should implement
-     * @return a proxy which uses the provided {@link Invoker} to handle all method invocations
+     * @return A proxy which uses the provided {@link Invoker} to handle all method invocations
      */
     <T> T createInvokerProxy(Invoker invoker, Class<?>... proxyClasses);
 
@@ -116,7 +116,7 @@ public interface ProxyFactory
      *            the invoker
      * @param proxyClasses
      *            the interfaces that the proxy should implement
-     * @return a proxy which uses the provided {@link Invoker} to handle all method invocations
+     * @return A proxy which uses the provided {@link Invoker} to handle all method invocations
      */
     <T> T createInvokerProxy(ClassLoader classLoader, Invoker invoker, Class<?>... proxyClasses);
 }

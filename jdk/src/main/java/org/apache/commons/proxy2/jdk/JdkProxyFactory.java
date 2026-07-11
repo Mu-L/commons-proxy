@@ -51,7 +51,7 @@ public class JdkProxyFactory extends AbstractProxyFactory
      *            the delegate provider
      * @param proxyClasses
      *            the interfaces that the proxy2 should implement
-     * @return a proxy2 which delegates to the object provided by the target <code>delegateProvider>
+     * @return A proxy2 which delegates to the object provided by the target <code>delegateProvider>
      */
     @Override
     public <T> T createDelegatorProxy(ClassLoader classLoader, ObjectProvider<?> delegateProvider,
@@ -75,7 +75,7 @@ public class JdkProxyFactory extends AbstractProxyFactory
      *            the method interceptor
      * @param proxyClasses
      *            the interfaces that the proxy2 should implement.
-     * @return a proxy2 which passes through a {@link Interceptor interceptor} before eventually reaching the
+     * @return A proxy2 which passes through a {@link Interceptor interceptor} before eventually reaching the
      *         <code>target</code> object.
      */
     @Override
@@ -97,7 +97,7 @@ public class JdkProxyFactory extends AbstractProxyFactory
      *            the invoker
      * @param proxyClasses
      *            the interfaces that the proxy2 should implement
-     * @return a proxy2 which uses the provided {@link Invoker} to handle all method invocations
+     * @return A proxy2 which uses the provided {@link Invoker} to handle all method invocations
      */
     @Override
     public <T> T createInvokerProxy(ClassLoader classLoader, Invoker invoker, Class<?>... proxyClasses)

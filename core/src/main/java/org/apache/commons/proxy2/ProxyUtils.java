@@ -88,7 +88,7 @@ public final class ProxyUtils
      * 
      * @param cls
      *            the class to look up, may be <code>null</code>
-     * @return an array of {@link Class} objects representing all interfaces implemented by the given class and its
+     * @return An array of {@link Class} objects representing all interfaces implemented by the given class and its
      *         superclasses or <code>null</code> if input class is null.
      */
     public static Class<?>[] getAllInterfaces(Class<?> cls)
