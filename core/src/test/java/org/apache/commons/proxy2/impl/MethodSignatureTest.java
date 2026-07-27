@@ -20,7 +20,6 @@ package org.apache.commons.proxy2.impl;
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
 
 import java.lang.reflect.Method;
 
@@ -42,7 +41,7 @@ public class MethodSignatureTest extends AbstractTestCase
     public void testEquals() throws Exception
     {
         final MethodSignature sig = new MethodSignature(Echo.class.getMethod("echoBack", String.class));
-        assertTrue(sig.equals(sig));
+        assertEquals(sig, sig);
         assertFalse(sig.equals("echoBack"));
         assertEquals(sig, new MethodSignature(Echo.class.getMethod("echoBack", String.class)));
         assertEquals(sig, new MethodSignature(DuplicateEcho.class.getMethod("echoBack", String.class)));
