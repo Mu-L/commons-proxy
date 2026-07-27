@@ -68,8 +68,8 @@ public abstract class AbstractSubclassingProxyFactoryTestCase extends AbstractPr
         final Echo proxy2 = factory.createDelegatorProxy(new ConstantProvider<Echo>(echo),
                 new Class[] { EqualsEcho.class });
         assertEquals(proxy1, proxy1);
-        assertFalse(proxy1.equals(proxy2));
-        assertFalse(proxy2.equals(proxy1));
+        assertNotEquals(proxy1, proxy2);
+        assertNotEquals(proxy2, proxy1);
     }
 
     @Test(expected = ProxyFactoryException.class)
@@ -97,8 +97,8 @@ public abstract class AbstractSubclassingProxyFactoryTestCase extends AbstractPr
         final Echo proxy2 = factory.createInterceptorProxy(echo, new NoOpMethodInterceptor(),
                 new Class[] { EqualsEcho.class });
         assertEquals(proxy1, proxy1);
-        assertFalse(proxy1.equals(proxy2));
-        assertFalse(proxy2.equals(proxy1));
+        assertNotEquals(proxy1, proxy2);
+        assertNotEquals(proxy2, proxy1);
     }
 
     @Test(expected = ProxyFactoryException.class)
@@ -129,8 +129,8 @@ public abstract class AbstractSubclassingProxyFactoryTestCase extends AbstractPr
         final Date proxy1 = factory.createInvokerProxy(new InvokerTester(), DATE_ONLY);
         final Date proxy2 = factory.createInvokerProxy(new InvokerTester(), DATE_ONLY);
         assertEquals(proxy1, proxy1);
-        assertFalse(proxy1.equals(proxy2));
-        assertFalse(proxy2.equals(proxy1));
+        assertNotEquals(proxy1, proxy2);
+        assertNotEquals(proxy2, proxy1);
     }
 
     @Test

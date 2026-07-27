@@ -19,6 +19,7 @@ package org.apache.commons.proxy2;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNotSame;
 import static org.junit.Assert.assertSame;
@@ -36,6 +37,9 @@ import java.util.ServiceLoader;
 import java.util.SortedSet;
 import java.util.TreeSet;
 
+import org.apache.commons.proxy2.AbstractProxyFactoryTestCase.InterceptorTester;
+import org.apache.commons.proxy2.AbstractProxyFactoryTestCase.InvokerTester;
+import org.apache.commons.proxy2.AbstractProxyFactoryTestCase.NoOpMethodInterceptor;
 import org.apache.commons.proxy2.provider.BeanProvider;
 import org.apache.commons.proxy2.provider.ConstantProvider;
 import org.apache.commons.proxy2.provider.SingletonProvider;
@@ -113,8 +117,8 @@ public abstract class AbstractProxyFactoryTestCase extends AbstractTestCase
         final Comparable<?> proxy1 = factory.createInterceptorProxy(date, new NoOpMethodInterceptor(), COMPARABLE_ONLY);
         final Comparable<?> proxy2 = factory.createInterceptorProxy(date, new NoOpMethodInterceptor(), COMPARABLE_ONLY);
         assertEquals(proxy1, proxy1);
-        assertFalse(proxy1.equals(proxy2));
-        assertFalse(proxy2.equals(proxy1));
+        assertNotEquals(proxy1, proxy2);
+        assertNotEquals(proxy2, proxy1);
     }
 
     @Test
@@ -123,8 +127,8 @@ public abstract class AbstractProxyFactoryTestCase extends AbstractTestCase
         final Comparable<?> proxy1 = factory.createInvokerProxy(new InvokerTester(), COMPARABLE_ONLY);
         final Comparable<?> proxy2 = factory.createInvokerProxy(new InvokerTester(), COMPARABLE_ONLY);
         assertEquals(proxy1, proxy1);
-        assertFalse(proxy1.equals(proxy2));
-        assertFalse(proxy2.equals(proxy1));
+        assertNotEquals(proxy1, proxy2);
+        assertNotEquals(proxy2, proxy1);
     }
 
     @Test
@@ -134,8 +138,8 @@ public abstract class AbstractProxyFactoryTestCase extends AbstractTestCase
         final Comparable<?> proxy1 = factory.createDelegatorProxy(new ConstantProvider<Date>(date), COMPARABLE_ONLY);
         final Comparable<?> proxy2 = factory.createDelegatorProxy(new ConstantProvider<Date>(date), COMPARABLE_ONLY);
         assertEquals(proxy1, proxy1);
-        assertFalse(proxy1.equals(proxy2));
-        assertFalse(proxy2.equals(proxy1));
+        assertNotEquals(proxy1, proxy2);
+        assertNotEquals(proxy2, proxy1);
     }
 
     @Test
